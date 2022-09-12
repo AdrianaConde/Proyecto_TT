@@ -1,0 +1,38 @@
+body{
+    background: #b993d6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b993d6, #8ca6db); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b993d6, #8ca6db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.caja { 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #03031ae1; 
+    font-size: 22px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #e7c1df; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    width: 600px;
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+}
+.calculadora { 
+    border: 2px rgb(14, 14, 236) ridge; 
+    width: 250px;
+    text-align: center;
+    background-color:#7a8ec0;; 
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #03031ae1; 
+    font-size: 18px; 
+    font-weight: 500;  
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    /* border-radius: 35px 0px 35px 0px;  */
+    /* -moz-border-radius: 35px 0px 35px 0px;  */
+    /* -webkit-border-radius: 35px 0px 35px 0px;  */
+    /* border: 2px solid #5878ca; */  
+}

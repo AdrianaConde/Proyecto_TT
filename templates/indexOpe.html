@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de reconocimiento de LS</title>
+    <!-- BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- CSS personalizado-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">Navegacion</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- "navbar ml-auto"  -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/operaciones">Operaciones</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="container">
+            <h1 class="display-4">Bienvenido!☺☻...</h1>
+            <p class="lead">Reconocimiento de LSE</p>
+            <hr class="my-4">
+            <!-- <h2 class="display-4">Accediendo a camara</h2> -->
+            <!-- <img src="{{ url_for('video_feed') }}"> -->
+            <div style="float: left;">
+                <img src="{{ url_for('video_feed') }}" controls poster="mivideo.jpg" width="600"></img>
+                <div style="border: ridge #0f0fef 1px;" class="caja">
+                    <div>El número es: </div>
+                    <div>1</div>
+                    <input type="button" value="Capturar" />
+                </div>
+            </div>
+            <div style="float: right;">
+                <div>
+                    <li><label type="checkbox" value="numero1" id="numeroR1">Numero 1</label></li>
+
+                    <li><label type="checkbox" value="numero2" id="numeroR2">Numero 2</label></li>
+                </div>
+                <select>
+                    <option value="1" id="sumar">Suma </option>
+                    <option value="2" id="restar">Resta </option>
+                    <option value="3" id="3">Multiplicación</option>
+                    <option value="4" id="4">División</option>
+                </select>
+                <input type="button" value="Calcular" onclick="return realizarOperacion()" />
+
+                <!-- Presentar resultado -->
+                <p type="text" class="calculadora" value="resultado">
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/layout.js')}}"></script>
+    </div>
+</body>
+
+</html>

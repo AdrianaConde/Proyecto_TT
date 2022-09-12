@@ -1,0 +1,17 @@
+{% extends "indexOpe.html" %}
+{%block content%}
+<div class="container">
+  <h1 class="display-4">Bienvenido!☺☻...</h1>
+  <!-- <p class="lead">Este sitio es para reconocimiento de LSE</p>
+    <hr class="my-4"> -->
+  <!-- <h2 class="display-4">Accediendo a camara</h2> -->
+  <!-- <img src="{{ url_for('video_feed') }}"> -->
+  <img src="{{ url_for('video_feed') }}" controls poster="mivideo.jpg" width="600"></img>
+  <!-- <div>
+    <p style="border: ridge #0f0fef 1px;" class="caja" src="{{ url_for('numeroAleatorio') }}"></p>
+  </div> -->
+  <!-- <div>
+    <input type="button" class="meters" value="Calcular">
+  </div> -->
+</div>
+{%endblock%}
